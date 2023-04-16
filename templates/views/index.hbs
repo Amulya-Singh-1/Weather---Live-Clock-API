@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {{>headerLinks}}
+    <style>
+        .bg-img{
+            position: relative;
+            left: 0;
+            right: 0;
+            top: 0;
+            display: flex;
+            animation: bg-animate 15s ease-in-out infinite ;
+        }
+        @keyframes bg-animate{
+            0%{
+                background:url(images/1.jpg) no-repeat  ;
+                background-size: cover;
+            }
+            20%{
+                background: url(images/2.jpeg) no-repeat;
+                background-size: cover;
+            }
+            40%{
+                background: url(images/3.webp) no-repeat;
+                background-size: cover;
+            }
+            60%{
+                background: url(images/4.jpg) no-repeat;
+                background-size: cover;
+            }
+            80%{
+                background:url(images/5.jpg) no-repeat  ;
+                background-size: cover;
+            }
+            100%{
+                background: url(images/3.webp) no-repeat;
+                background-size: cover;
+            }
+        }
+    </style>
+</head>
+<body style="font-family:cookie;">
+    {{>navbar}}
+    <div class="container-fluid">
+        <div class="bg-img">
+            {{>homePageText}}
+        </div>
+    </div>
+    {{>footer}}
+</body>
+</html>

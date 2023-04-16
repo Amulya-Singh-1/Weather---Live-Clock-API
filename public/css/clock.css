@@ -1,0 +1,45 @@
+#Clockcontainer{
+    display: flex !important;
+    position: relative;
+    height: 43vw; 
+    width: 43vw; 
+    /*  ORIGINAL HEIGHT 
+    height: 40vw;
+    width: 40vw; */
+    background: url(../images/idkbruhh.jpg) no-repeat;
+    background-size:cover;
+    margin: auto;
+}
+body{
+    background-color:black;
+}
+#hour, #minute , #second{
+    position: absolute;
+    background: black;
+    border-radius: 10px;
+    transform-origin: bottom;
+}
+
+#hour{
+    width: 1.8%;
+    height: 25%;
+    top: 25%;
+    left: 48.85%;
+    opacity: 0.8; 
+}
+
+#minute{
+    width: 1.6%;
+    height: 30%;
+    top: 19%;
+    left: 48.9%;
+    opacity: 0.8;
+}
+
+#second{
+    width: 1%;
+    height: 40%;
+    top: 9%;
+    left: 49.25%;
+    opacity: 0.8; 
+}

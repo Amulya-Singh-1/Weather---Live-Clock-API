@@ -1,0 +1,40 @@
+<div class="container-fluid main_header">
+        <div class="row"> 
+            <div class="col-md-10 col-12 mx-auto">
+                <div class="tempInformation">
+                    <div class="top_layer">
+                        <p id="todays_date"> </p>
+                        {{!-- <p id="todays_month"> </p>  <pre> - </pre>
+                        <p id="todays_year"> </p> <pre> : </pre> --}}
+                        <p id="day"> </p> 
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>
+
+
+<script>
+        const getCurrentDay=() =>{
+            let weekday= new Array(7);
+            weekday[0]="Sunday";
+            weekday[1]="Monday";
+            weekday[2]="Tuesday";
+            weekday[3]="Wednesday";
+            weekday[4]="Thursday";
+            weekday[5]="Friday";
+            weekday[6]="Saturday";
+
+            let currentTime= new Date();
+            let days=weekday[currentTime.getDay()];
+            const day=document.getElementById('day');
+            // day.innerText=days;
+            const t_date=document.getElementById('todays_date');
+            //const t_month=document.getElementById('todays_month');
+            //const t_year=document.getElementById('todays_year');
+            t_date.innerText=currentTime;
+            //t_month.innerText=currentTime.getMonth();
+            // t_year.innerText=currentTime.getFullYear();
+        };
+        getCurrentDay();
+</script>
